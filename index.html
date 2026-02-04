@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Undangan</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ucapan-section">
+    <h2>💌 Kirim Ucapan</h2>
+
+    <form id="ucapanForm">
+      <div class="field">
+        <label>Nama</label>
+        <input type="text" id="nama" placeholder="Nama kamu">
+      </div>
+
+      <div class="field">
+        <label>Ucapan</label>
+        <textarea id="pesan" placeholder="Tulis ucapan terbaikmu 🤍"></textarea>
+      </div>
+
+      <div class="field">
+        <label>Kehadiran</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="hadir" value="Hadir"> Hadir
+          </label>
+          <label>
+            <input type="radio" name="hadir" value="Tidak Hadir"> Tidak Hadir
+          </label>
+        </div>
+      </div>
+
+      <button id="submitBtn">Kirim Ucapan</button>
+    </form>
+
+    <p class="note">Ucapan akan tampil otomatis ✨</p>
+
+    <div id="listUcapan"></div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+  
